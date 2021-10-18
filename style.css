@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --secondary: grey;
+}
+
+.wall {
+    position: relative;
+    margin: auto;
+    width: 304px;
+    height: 327px;
+    border: 2px solid var(--secondary);
+    margin-top: 10%;
+}
+
+
+/* Slideshow container */
+
+.container-slide {
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+    margin-top: -17px;
+}
+
+
+/* Make the images invisible by default */
+
+.container {
+    display: none;
+}
+
+
+/* forward & Back buttons */
+
+.Back,
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: -50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    transition: 0.4s ease;
+}
+
+
+/* Place the "forward button" to the right */
+
+.forward {
+    right: 0;
+}
+
+
+/* The circles or bullets and indicators */
+
+.dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.enable,
+.dots:hover {
+    background-color: var(--secondary);
+}
